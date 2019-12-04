@@ -1,0 +1,304 @@
+body
+{
+    background-image: url('https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80');
+    background-size: cover;
+}
+
+/* DECORATING THE HEADER SECTION */
+ 
+ /*DECORATING THE IMAGE IN THE HEADER*/
+.header
+{
+	padding-top: 2em;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.header-image a img
+{
+	width: 50px;
+	padding-left: 1em; 
+}
+
+
+/* DECORATING THE NAVIGATION TABS IN THE HEADER*/
+.header .header-navs
+{
+	float: right;
+	font-size: 15px;
+	font-weight: 600; 
+	font-family: sans-serif;
+}
+.header-navs nav
+{
+	justify-content: flex-end;
+	padding: 1em;
+}
+nav a:hover
+{
+	text-decoration-color: white;
+	color: white;
+}
+.new-tab
+{
+	color: white;
+	padding-left: 20px;
+}
+
+.main-container
+{
+	display: grid;
+	grid-template-columns:minmax(10px,1fr ) 5fr;
+}
+
+/*DECORATION OF THE SEARCH FORM*/
+
+/*DECORATING THE HEADING OF THE FORM*/
+.search-heading h1
+{
+    font-size: 25px;
+    font-weight: bold;	
+}
+.search-heading
+{
+	padding-bottom: 2em;
+	padding: 1em;
+}
+
+
+/*DECORATING THE MAIN FORM */
+.form-section
+{
+	
+	display: grid;
+	grid-column-start: 2;
+-
+
+}
+
+/*DECORATING THE MAIN GRID*/
+.search-grid
+{
+	padding-top: 1em;
+	padding: 1em;
+    display: grid;
+    grid-template-columns: 1/3fr 1/3fr;
+	/*margin-left: 10em;
+	margin-right: 55em;*/
+	max-width: 500px;
+	background-color: white;
+
+	border-radius: 5px 5px 5px 5px;
+}
+
+/*DECORATING THE ELEMENTS OF THE FORM*/
+.search-details >*
+{
+	padding: 1em;
+	display: grid;
+	grid-gap: 5px;
+}
+.search-check
+{
+	grid-template-columns: 1fr 1fr;
+}
+.search-count
+{
+	grid-template-columns: 1fr 1fr;
+}
+
+/*BUTTON DECORATION*/
+.btn-default
+{
+	color: white;	
+	font-size: bolder;
+	font-weight: 600;
+    background-color: #ff6666;
+}
+.btn-default:hover
+{
+	color: white;
+	
+}
+
+/*LABEL DECORATION*/
+label
+{
+	font-weight: 500;
+}
+
+/*DECORATION OF THE INPUT BOXES*/
+input[type=text]
+{
+	/* SETTING RADIUS OF THE BORDER*/
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	
+	border-width: 1px;
+    
+    /*SETTING THE COLOR OF THE BORDER*/
+	border-top-color: #DEDFE2;
+	border-bottom-color: #DEDFE2;
+	border-left-color: #DEDFE2;
+	border-right-color: #DEDFE2;
+    
+    /*SETTING THE BORDER STYLE*/
+	border-top-style:solid;
+	border-bottom-style:solid;
+	border-left-style:solid;
+	border-right-style:solid;
+
+
+}
+
+input[type=date]
+{
+	/* SETTING RADIUS OF THE BORDER*/
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	
+	
+	border-width: 1px;
+    
+     /*SETTING THE COLOR OF THE BORDER*/
+	border-top-color: #DEDFE2;
+	border-bottom-color: #DEDFE2;
+	border-left-color: #DEDFE2;
+	border-right-color: #DEDFE2;
+    
+    /*SETTING THE BORDER STYLE*/
+	border-top-style:solid;
+	border-bottom-style:solid;
+	border-left-style:solid;
+	border-right-style:solid;
+}
+
+/*DECORATING THE SELECT ELEMENT*/
+select
+{
+	/* SETTING RADIUS OF THE BORDER*/
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+	
+	/*SETTING THE COLOR OF THE BORDER*/
+	border-top-color: #DEDFE2;
+	border-bottom-color: #DEDFE2;
+	border-left-color: #DEDFE2;
+	border-right-color: #DEDFE2;
+
+    /*SETTING THE BORDER STYLE*/
+	border-top-style:solid;
+	border-bottom-style:solid;
+	border-left-style:solid;
+	border-right-style:solid;
+
+	border-width: 1px;
+}
+
+
+/*DECORATING THE ADVERTISING BLOCK*/
+.adver
+{
+	padding-left: 1em;
+	grid-template-columns: 1fr 1fr;
+	margin-top: 2.5em;
+	margin-bottom: 1.0em;
+	/*margin-left: 10em;
+	margin-right: 55em;*/
+	max-width: 500px;
+	background-color: white;
+	border-radius: 5px 5px 5px 5px;
+	
+}
+
+.adver >*
+{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	color: black;
+	grid-gap: 8em;
+	font-size: 14px;
+}
+.adver span
+{
+	font-weight: 700;
+
+}
+.adver a:hover
+{
+	text-decoration: none;
+	text-decoration-color: black;
+	color: black;
+
+}
+
+/*SETTING MEDIA QUERIES FOR MAKING IT MORE RESPONSIVE*/
+
+/*WHEN SCREEN SIZE IS SMALL*/
+@media only screen and (max-width: 740px)
+{
+
+   body
+   {
+   	 background-image: none;
+   }
+
+   .search-grid
+   {
+        display: grid;
+        grid-template-columns: 1/2fr 1/2fr;
+        padding-left: 0.3em;
+        max-width: 740px;
+   }
+
+   .search-heading h1
+   {
+   	    font-size: 22px;
+        font-weight: bold;
+   }
+
+   .adver
+   {
+   	   border-top: solid;
+   	   border-top-style: solid;
+
+   	   border-top-left-radius: 0;
+   	   border-top-right-radius: 0;
+   	   
+   	   border-top-color: #DEDFE2;
+   	   border-top-width: 1px;
+
+   }
+
+   .form-section
+   {
+   	    /*padding-left: 0.5em;
+   	    */width: 100%;
+   }
+
+   .not-imp-tabs
+   {
+   	   display: none;
+   }
+   .imp-tabs .new-tab
+   {
+       color: black;
+       font-weight: 600;
+   }
+
+   nav a:hover
+   {
+	   text-decoration-color: black;
+   }
+
+   .main-container
+   {
+   	    display: flex;
+   }
+}
