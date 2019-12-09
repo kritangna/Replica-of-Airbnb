@@ -9,9 +9,16 @@ body
  /*DECORATING THE IMAGE IN THE HEADER*/
 .header
 {
-	padding-top: 2em;
 	display: grid;
-	grid-template-columns: 1fr 1fr;
+	padding-top: 1em;
+	/*grid-template-columns: 1fr 1fr;*/
+	grid-template-areas: "head-image blank-space navs"
+}
+
+.header-image
+{
+	display: grid;
+	grid-area: head-image;
 }
 
 .header-image a img
@@ -22,6 +29,12 @@ body
 
 
 /* DECORATING THE NAVIGATION TABS IN THE HEADER*/
+
+.header-navs
+{
+	grid-area: navs;
+
+}
 .header .header-navs
 {
 	float: right;
@@ -45,10 +58,17 @@ nav a:hover
 	padding-left: 20px;
 }
 
+/*DECORATING THE MAIN FORM */
 .main-container
 {
 	display: grid;
-	grid-template-columns:minmax(10px,1fr ) 5fr;
+	/*grid-template-columns:minmax(10px,1fr ) 5fr;*/
+	grid-template-areas: "padding main-content padding"
+	                     "padding main-content padding"
+}
+.form-section
+{
+	grid-area: main-content;
 }
 
 /*DECORATION OF THE SEARCH FORM*/
@@ -67,14 +87,7 @@ nav a:hover
 
 
 /*DECORATING THE MAIN FORM */
-.form-section
-{
-	
-	display: grid;
-	grid-column-start: 2;
--
 
-}
 
 /*DECORATING THE MAIN GRID*/
 .search-grid
