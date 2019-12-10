@@ -11,35 +11,24 @@ body
 {
 	display: grid;
 	padding: 1em;
-	/*grid-template-columns: 1fr 1fr;*/
-	grid-template-areas: "head-image blank-space navs";
-	grid-template-columns:1fr 1fr 3fr;
+	grid-template-rows: 10px auto;
+	grid-template-columns:10px 10px 1fr auto 10px;
+	grid-template-areas: "freespace freespace freespace freespace freespace" 
+			     "freespace1 head-image blank-space navs freespace2";
 	grid-gap: 20px;
 }
 
-.header-image
+.home-image
 {
 	display: grid;
 	grid-area: head-image;
 }
-
-.header-image a img
-{
-	width: 50px;
-	padding-left: 1em; 
-}
-
 
 /* DECORATING THE NAVIGATION TABS IN THE HEADER*/
 
 .header-navs
 {
 	grid-area: navs;
-
-}
-.header .header-navs
-{
-	float: right;
 	font-size: 15px;
 	font-weight: 600; 
 	font-family: sans-serif;
@@ -47,14 +36,13 @@ body
 .header-navs nav
 {
 	justify-content: flex-end;
-	padding: 1em;
 }
 nav a:hover
 {
 	text-decoration-color: white;
 	color: white;
 }
-.new-tab
+.header-link
 {
 	color: white;
 	padding-left: 20px;
@@ -65,18 +53,17 @@ nav a:hover
 {
 	display: grid;
 	grid-template-areas: "padding1 main-content padding2";
-	/*New change*/
-	grid-template-columns: minmax(10px,1fr) 1fr 3fr;
-	                    
-}
-.form-section
-{
-	grid-area: main-content;
+	grid-template-columns: minmax(10px,1fr) 1fr 3fr;                    
 }
 
 /*DECORATION OF THE SEARCH FORM*/
 
 /*DECORATING THE HEADING OF THE FORM*/
+.form-section
+{
+	grid-area: main-content;
+}
+
 .search-heading h1
 {
     font-size: 25px;
@@ -97,13 +84,10 @@ nav a:hover
 {
 	padding-top: 1em;
 	padding: 1em;
-    display: grid;
-    grid-template-columns: 1/3fr 1/3fr;
-	/*margin-left: 10em;
-	margin-right: 55em;*/
+        display: grid;
+        grid-template-columns: 1/3fr 1/3fr;
 	max-width: 500px;
 	background-color: white;
-
 	border-radius: 5px 5px 5px 5px;
 }
 
@@ -302,7 +286,7 @@ select
    {
    	   display: none;
    }
-   .imp-tabs .new-tab
+   .imp-tabs .header-link
    {
        color: black;
        font-weight: 600;
